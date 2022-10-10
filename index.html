@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7742add4-5d3c-4060-9f01-67963d12fb4e&amp;lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="inner">
+          <div class="header__wrapper">
+            <div class="header__logo">
+              <svg width="108" height="57" viewbox="0 0 108 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1995 3.94483C12.6397 7.98997 12.3377 8.21036 6.23704 9.77309C3.1506 10.5631 0.799643 14.5991 0.122678 20.2696C-0.466867 25.2072 1.14138 30.728 3.38396 31.4644C4.9727 31.986 4.96764 31.7266 3.54435 39.5157C3.16721 41.5782 4.6642 42.887 6.11494 41.7614C6.58383 41.3968 7.21167 39.3089 7.50933 37.1204C8.01362 33.4117 8.23831 33.0925 10.8197 32.4186C14.3173 31.5071 17.2505 28.9031 19.1673 25.0086C21.6801 19.9059 20.8073 10.6955 17.6941 9.45474C16.4695 8.96678 16.4609 8.7473 17.5453 5.89212C18.1811 4.21874 18.5026 2.19981 18.2599 1.4062C17.4687 -1.18232 15.7666 -0.117532 14.1995 3.94483ZM79.9186 7.19092C79.4107 8.22587 79.4295 8.34732 81.594 9.48195C83.5115 10.4878 84.6537 11.8619 85.3755 14.0305C86.4108 17.1423 86.7569 20.8237 86.0134 20.8237C85.2895 20.8237 81.9228 15.8635 81.3274 13.9189C81.0045 12.8641 81.0413 8.78555 80.0612 8.5717C78.4764 8.22587 77.6933 11.2497 78.1319 13.8645C78.6774 17.1187 81.4683 21.2582 84.4225 23.1955C87.1224 24.9659 87.0423 26.9749 84.2918 26.4679C82.5795 26.1532 81.5926 26.7799 79.139 29.7394C76.1537 33.3401 72.2906 36.0528 71.5219 35.0887C71.3066 34.8185 71.6426 33.3546 72.2675 31.8372C74.5014 26.4144 73.3657 24.5832 70.2193 28.5331C68.0706 31.2304 65.0073 31.7039 65.8215 29.2133C67.3402 24.5669 65.4047 22.8245 63.4713 27.0991C62.725 28.7489 61.8031 29.7058 61.2229 29.431C60.5077 29.0927 60.3523 29.5308 60.6529 31.0336C61.0084 32.8131 60.6673 33.2584 58.216 34.2189C54.7712 35.5685 51.7303 35.6665 51.7303 34.4285C51.7303 33.9296 52.1926 33.5215 52.7583 33.5215C54.3933 33.5215 58.2326 28.9984 58.2326 27.0728C58.2326 26.0833 57.4458 24.8698 56.4264 24.2866C53.9526 22.8717 51.39 24.4417 49.4566 28.5558C47.7956 32.0903 42.0215 37.5711 40.8872 36.6914C39.8396 35.8787 40.0123 34.4285 41.1567 34.4285C41.6993 34.4285 42.9998 33.5822 44.0467 32.5483C47.7031 28.9385 45.6802 22.4273 41.4074 24.0526C39.3939 24.8181 36.5581 28.0297 36.5581 29.5444C36.5581 31.8699 38.1266 31.8046 39.8982 29.4056C41.3085 27.4946 41.9103 27.1844 42.5699 28.027C43.6269 29.3775 40.9725 32.3914 38.0927 33.1106C37.0501 33.3709 35.1421 34.004 33.8532 34.5164C30.8289 35.72 30.0558 35.0379 30.0558 31.1715C30.0558 25.3695 25.1993 25.3795 20.7127 31.1896C16.4031 36.7721 19.22 41.2816 24.5505 37.3335C26.874 35.613 26.9556 35.6112 27.7785 37.2655C28.8724 39.4649 30.4972 39.4105 33.9955 37.056C36.7055 35.2329 36.8717 35.2202 37.7777 36.7757C38.8838 38.6749 38.9965 39.8703 38.0696 39.8703C37.7083 39.8703 35.9202 41.6915 34.0959 43.9182C31.4068 47.1987 30.7783 48.5637 30.7783 51.1223C30.7783 53.3562 31.2479 54.6922 32.3844 55.6908C34.7216 57.746 36.1976 57.4449 39.0175 54.3367C41.8619 51.2012 43.4116 46.3825 42.8033 42.5632C42.4673 40.4544 42.7975 39.5456 44.5871 37.6555C47.2321 34.862 47.5175 34.8266 48.6727 37.1494C49.7788 39.3733 53.5097 39.5701 57.2601 37.6029C58.687 36.8546 59.9767 36.2424 60.1269 36.2424C60.2772 36.2424 60.4 36.8546 60.4 37.6029C60.4 38.3511 61.0098 38.9634 61.7547 38.9634C62.6816 38.9634 63.2459 38.1044 63.5428 36.2424C63.9069 33.955 64.3166 33.5215 66.1141 33.5215C67.9088 33.5215 68.2881 33.9214 68.4803 36.0157C68.7736 39.22 71.1383 39.7506 74.3894 37.3426C76.757 35.5894 76.7621 35.5894 77.4304 37.5013C78.2085 39.7252 81.9025 40.5351 84.2065 38.9869C85.8856 37.8587 88.5768 31.7637 88.5768 29.0872C88.5768 28.1059 89.0753 26.6765 89.6844 25.9119C90.4943 24.8952 90.5976 24.0871 90.0702 22.8998C89.6728 22.0074 88.9929 18.9554 88.5595 16.1174C87.5942 9.80574 85.5807 6.30661 82.9248 6.32566C81.8613 6.33382 80.2861 6.4421 79.9186 7.19092ZM10.8653 14.6517C10.5885 15.7465 9.43546 19.2347 8.30334 22.4028C6.41332 27.6905 6.12144 28.0814 4.748 27.159C2.80814 25.8557 1.53368 22.2958 2.25689 20.2016C2.78936 18.6597 2.84427 18.6561 3.12748 20.1435C3.49233 22.0581 4.76896 22.2677 4.76896 20.4129C4.76896 17.7609 6.4704 14.5166 8.30478 13.6713C11.1275 12.3707 11.4143 12.4804 10.8653 14.6517ZM17.0511 14.4749C20.7278 19.0905 16.8272 28.0796 11.147 28.0796C9.88268 28.0796 9.71073 27.6723 10.0568 25.4992C10.6926 21.5085 13.9914 12.6609 14.844 12.6609C15.263 12.6609 16.2564 13.4772 17.0511 14.4749ZM95.4043 27.5417C92.4876 29.1362 89.1678 34.1772 89.4431 36.5943C89.7429 39.2327 92.3966 39.5239 95.4606 37.2546C97.9264 35.4279 97.9575 35.4279 98.7074 37.1866C99.1243 38.1643 100.12 38.9634 100.92 38.9634C102.762 38.9634 106.07 36.8374 107.414 34.7912C108.364 33.3437 108.275 33.2784 106.278 33.9523C101.948 35.4143 101.3 35.1377 101.152 31.7665C101.073 29.9734 100.463 28.1458 99.7153 27.4583C98.1547 26.0262 98.1757 26.0262 95.4043 27.5417ZM55.3427 28.8895C55.3427 29.8092 53.142 31.0617 52.6384 30.4287C52.4563 30.201 52.5221 29.5788 52.7843 29.0473C53.3609 27.8764 55.3427 27.754 55.3427 28.8895ZM26.4434 31.6866C26.4434 32.8748 22.9069 35.7327 22.331 35.0107C21.709 34.2298 24.2673 30.8005 25.4717 30.8005C26.0063 30.8005 26.4434 31.1996 26.4434 31.6866ZM84.9644 32.4331C84.9644 34.5228 83.5946 36.2424 81.93 36.2424C80.3051 36.2424 80.2603 34.6298 81.8252 32.4594C83.3533 30.3398 84.9644 30.3262 84.9644 32.4331ZM97.2466 31.6558C97.2466 32.8884 94.2418 35.3536 93.4695 34.7541C92.6372 34.1083 94.9852 30.8005 96.2748 30.8005C96.8095 30.8005 97.2466 31.1851 97.2466 31.6558ZM38.9568 48.2064C38.1895 49.8571 37.0913 51.2076 36.5177 51.2076C34.6811 51.2076 34.9593 47.4944 37.027 44.4098C38.9394 41.5573 39.042 41.5156 39.6843 43.3241C40.1734 44.6991 39.9776 46.0133 38.9568 48.2064Z" fill="currentColor"></path>
+              </svg>
+            </div>
+            <div class="header__burger">
+              <ul class="header__menu">
+                <li class="header__menu-item"><a class="header__menu-link" href="#catalog">Проекты</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#about">О нас</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#features">Почему мы</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#contacts">Контакты</a></li>
+              </ul>
+              <div class="header__m-contacts">
+                <div class="header__m-item">
+                  <div class="header__m-title">Контактный номер:</div>
+                  <div class="header__m-text">
+                    <p><a href="tel:+79202125050">+7 (920)-212-50-50</a></p>
+                    <p><a href="tel:+79202431000">+7 (920)-243-10-00</a></p>
+                  </div>
+                </div>
+                <div class="header__m-item">
+                  <div class="header__m-title">Email:</div>
+                  <div class="header__m-main">
+                    <p><a href="mailto:fazenda.vrn@yandex.ru">fazenda.vrn@yandex.ru</a></p>
+                  </div>
+                </div>
+              </div>
+            </div><a class="ui-button header__ui-button ui-button--empty-black" href="tel:89535563280">8-953-556-32-80</a>
+            <div class="header__burger-btn"><span></span></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section">
+          <div class="inner">
+            <div class="banner">
+              <div class="banner__head">
+                <h1 class="banner__h1">Фазенда</h1>
+                <div class="banner__addr">Воронеж, Липецк белгород, курск, тамбов</div>
+              </div>
+              <div class="banner__descr">Строения из профилированного бруса камерной сушки от&nbsp;производителя</div>
+              <div class="banner__btns"><a class="ui-button banner__ui-button ui-button--empty-black" href="#">Выбрать проект</a><a class="ui-button banner__ui-button" href="#">Оставить заявку</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--mt0">
+          <div class="promotion">
+            <div class="promotion__content">
+              <div class="inner">
+                <div class="promotion__inner">
+                  <div class="promotion__title">спецпредложение</div>
+                  <div class="promotion__wrapper">
+                    <div class="promotion__price">
+                      <div class="promotion__price-value">500 000₽</div>
+                      <div class="promotion__price-text">под ключ</div>
+                    </div>
+                    <div class="promotion__text">
+                      <div class="promotion__descr">Готовая баня за 12 дней</div>
+                      <ul class="promotion__ul">
+                        <li>Возможно доставка <br>в&nbsp;сборе</li>
+                        <li>Альернатива <br>бани-бочки</li>
+                      </ul><a class="ui-button promotion__ui-button ui-button--empty-white" href="#">Узнать подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="promotion__img"><img src="img/promotion_img.webp" alt=""/></div>
+          </div>
+        </section>
+        <section class="section section--ov-hidden" id="catalog">
+          <div class="inner">
+            <div class="catalog">
+              <div class="catalog-head">
+                <div class="ui-tag">Каталог
+                </div>
+                <div class="catalog-head__content">
+                  <h2 class="ui-h2 catalog-head__ui-h2">Предлагаем клиентам дома, бани, беседки с&nbsp;безупречным качеством строительства
+                  </h2>
+                  <div class="catalog-head__descr">Строения из натурального материала обеспечивают контроль температуры внутри. Поэтому вы себя будете комфортно чувствовать как в&nbsp;жаркую, так и&nbsp;в&nbsp;холодную погоду.</div>
+                </div>
+              </div>
+              <div class="catalog-sort">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide catalog-sort__item">Все проекты</div>
+                    <div class="swiper-slide catalog-sort__item catalog-sort__item--active">Дома</div>
+                    <div class="swiper-slide catalog-sort__item">Беседки</div>
+                    <div class="swiper-slide catalog-sort__item">Бани</div>
+                    <div class="swiper-slide catalog-sort__item">Хозблоки</div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-wrapper">
+                <div class="catalog-item">
+                  <div class="catalog-item__img"><img src="img/catalog_item_img.webp" alt=""/></div>
+                  <div class="catalog-item__main">
+                    <div class="catalog-item__info">Садовый дом <br>Площадь 42,96 м22</div>
+                    <div class="catalog-item__price">от 16000р за 1 м2</div>
+                  </div>
+                  <div class="catalog-item__foot">
+                    <button class="ui-button ui-button--empty-black" data-src="#object-popup" onclick="window.getPopup($(this))">Подробнее
+                    </button><a class="ui-button" href="#">Заказать</a>
+                  </div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item__img"><img src="img/catalog_item_img.webp" alt=""/></div>
+                  <div class="catalog-item__main">
+                    <div class="catalog-item__info">Садовый дом <br>Площадь 42,96 м22</div>
+                    <div class="catalog-item__price">от 16000р за 1 м2</div>
+                  </div>
+                  <div class="catalog-item__foot">
+                    <button class="ui-button ui-button--empty-black" data-src="#object-popup" onclick="window.getPopup($(this))">Подробнее
+                    </button><a class="ui-button" href="#">Заказать</a>
+                  </div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item__img"><img src="img/catalog_item_img.webp" alt=""/></div>
+                  <div class="catalog-item__main">
+                    <div class="catalog-item__info">Садовый дом <br>Площадь 42,96 м22</div>
+                    <div class="catalog-item__price">от 16000р за 1 м2</div>
+                  </div>
+                  <div class="catalog-item__foot">
+                    <button class="ui-button ui-button--empty-black" data-src="#object-popup" onclick="window.getPopup($(this))">Подробнее
+                    </button><a class="ui-button" href="#">Заказать</a>
+                  </div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item__img"><img src="img/catalog_item_img.webp" alt=""/></div>
+                  <div class="catalog-item__main">
+                    <div class="catalog-item__info">Садовый дом <br>Площадь 42,96 м22</div>
+                    <div class="catalog-item__price">от 16000р за 1 м2</div>
+                  </div>
+                  <div class="catalog-item__foot">
+                    <button class="ui-button ui-button--empty-black" data-src="#object-popup" onclick="window.getPopup($(this))">Подробнее
+                    </button><a class="ui-button" href="#">Заказать</a>
+                  </div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item__img"><img src="img/catalog_item_img.webp" alt=""/></div>
+                  <div class="catalog-item__main">
+                    <div class="catalog-item__info">Садовый дом <br>Площадь 42,96 м22</div>
+                    <div class="catalog-item__price">от 16000р за 1 м2</div>
+                  </div>
+                  <div class="catalog-item__foot">
+                    <button class="ui-button ui-button--empty-black" data-src="#object-popup" onclick="window.getPopup($(this))">Подробнее
+                    </button><a class="ui-button" href="#">Заказать</a>
+                  </div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item__img"><img src="img/catalog_item_img.webp" alt=""/></div>
+                  <div class="catalog-item__main">
+                    <div class="catalog-item__info">Садовый дом <br>Площадь 42,96 м22</div>
+                    <div class="catalog-item__price">от 16000р за 1 м2</div>
+                  </div>
+                  <div class="catalog-item__foot">
+                    <button class="ui-button ui-button--empty-black" data-src="#object-popup" onclick="window.getPopup($(this))">Подробнее
+                    </button><a class="ui-button" href="#">Заказать</a>
+                  </div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item__img"><img src="img/catalog_item_img.webp" alt=""/></div>
+                  <div class="catalog-item__main">
+                    <div class="catalog-item__info">Садовый дом <br>Площадь 42,96 м22</div>
+                    <div class="catalog-item__price">от 16000р за 1 м2</div>
+                  </div>
+                  <div class="catalog-item__foot">
+                    <button class="ui-button ui-button--empty-black" data-src="#object-popup" onclick="window.getPopup($(this))">Подробнее
+                    </button><a class="ui-button" href="#">Заказать</a>
+                  </div>
+                </div>
+                <div class="catalog-item">
+                  <div class="catalog-item__img"><img src="img/catalog_item_img.webp" alt=""/></div>
+                  <div class="catalog-item__main">
+                    <div class="catalog-item__info">Садовый дом <br>Площадь 42,96 м22</div>
+                    <div class="catalog-item__price">от 16000р за 1 м2</div>
+                  </div>
+                  <div class="catalog-item__foot">
+                    <button class="ui-button ui-button--empty-black" data-src="#object-popup" onclick="window.getPopup($(this))">Подробнее
+                    </button><a class="ui-button" href="#">Заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-more"><a class="ui-button ui-button--empty-arrow" href="#">Смотреть все
+                  <div class="ui-button__icon"><img src="img/ui_button_icon_arrow.svg" alt=""/></div></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--bg-grey" id="about">
+          <div class="inner">
+            <div class="about">
+              <div class="ui-tag">О компании
+              </div>
+              <div class="about__wrapper">
+                <h2 class="ui-h2 about__ui-h2">Производственно-строительная компания «Фазенда»
+                </h2>
+                <div class="about__main">
+                  <div class="about__img"><img src="img/about_img.webp" alt=""/></div>
+                  <div class="about__content">
+                    <div class="about__text">
+                      <p>Производственно-строительная компания «ФАЗЕНДА» является структурным подразделением компании «ТЕХНОЛОГИИ УЮТА», которая работает на&nbsp;рынке деревянного домостроения уже более 10&nbsp;лет. На&nbsp;протяжении всего этого времени наши специалисты приобрели огромный опыт работы в&nbsp;сфере деревянного домостроения.</p>
+                      <p>Ранее мы использовали готовые строительные материалы партнеров-производителей. В&nbsp;2018 году мы&nbsp;открыли собственное производство профилированного бруса. На&nbsp;сегодняшний день мы&nbsp;работаем с&nbsp;надежными поставщиками сырья в&nbsp;городе Йошкар-Ола и&nbsp;городе Томск.</p>
+                    </div><a class="ui-button" href="#">Оставить заявку</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="benefits">
+          <div class="inner">
+            <div class="benefits">
+              <h3 class="ui-h3 benefits__ui-h3">Мы отвечаем за качество нашей продукции, исключая цепочку посредников между закупаемым нами сырьем и готовой продукцией 
+              </h3>
+              <div class="benefits__wrapper">
+                <div class="benefits__item">
+                  <div class="benefits__top">
+                    <div class="benefits__img"><img src="img/benefits_img_1.webp" alt=""/></div>
+                    <div class="benefits__title">Доступные цены</div>
+                  </div>
+                  <div class="benefits__text">Одни из самых низких цен на&nbsp;строения из&nbsp;профилированного бруса камерной сушки</div>
+                </div>
+                <div class="benefits__item benefits__item--green">
+                  <div class="benefits__top">
+                    <div class="benefits__img"><img src="img/benefits_img_2.webp" alt=""/></div>
+                    <div class="benefits__title">Большой выбор</div>
+                  </div>
+                  <div class="benefits__text">На нашем сайте представлено более чем 40&nbsp;проектов. Также мы готовы создать для&nbsp;Вас индивидуальный проект с&nbsp;учетом Ваших пожеланий.</div>
+                </div>
+                <div class="benefits__item benefits__item--green benefits__item--always-on-touch">
+                  <div class="benefits__top">
+                    <div class="benefits__img"><img src="img/benefits_img_3.webp" alt=""/></div>
+                    <div class="benefits__title">Всегда на связи</div>
+                  </div>
+                  <div class="benefits__text">У вас будет персональный менеджер, который будет вас сопровождать на&nbsp;всех этапах строительства дома</div>
+                </div>
+                <div class="benefits__item">
+                  <div class="benefits__top">
+                    <div class="benefits__img"><img src="img/benefits_img_4.webp" alt=""/></div>
+                    <div class="benefits__title">Быстрая доставка</div>
+                  </div>
+                  <div class="benefits__text">Мы доставляем наши проекты в&nbsp;любую точку&nbsp;РФ, работая с&nbsp;ведущими транспортными компаниями.  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--bg-grey">
+          <div class="inner">
+            <div class="application">
+              <div class="application__head">
+                <h2 class="ui-h2 application__ui-h2">Хотите заказать проект с&nbsp;учетом всех ваших пожеланий?
+                </h2>
+                <div class="application__descr">Оставьте свои контакты ниже, и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время для&nbsp;обсуждения всех деталей</div>
+              </div>
+              <form class="application__form" action="#">
+                <div class="ui-input">
+                  <input id="applicationName" placeholder="Имя" type="text" name="name"/>
+                </div>
+                <div class="ui-input">
+                  <input id="applicationPhone" placeholder="Телефон" type="text" name="phone"/>
+                </div>
+                <button class="ui-button application__ui-button ui-button--fz-small">Заказать проект
+                </button>
+              </form>
+              <div class="application__agree">Нажимая кнопку Заказать проект, вы даете согласие на <a class="ui-button ui-button--link" href="#">обработку персональных данных</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="inner">
+            <div class="steps">
+              <div class="ui-tag">Этапы строительства
+              </div>
+              <div class="about__wrapper">
+                <div class="steps__head">
+                  <h2 class="ui-h2 steps__ui-h2">Мы сопровождаем вас на всех этапах строительства дома
+                  </h2>
+                  <div class="steps__descr">Проявляем внимание к вашим пожеланиям и создаем максимально комфортные условия, чтобы процесс строительства был для вас приятным и легким</div>
+                </div>
+                <div class="steps__main">
+                  <div class="steps__item">
+                    <div class="steps__count">01</div>
+                    <div class="steps__title">Выбор проекта</div>
+                    <div class="steps__text">
+                      <p>Наши клиенты имеют возможность выбрать готовый проект из&nbsp;нашего каталога, а&nbsp;так&nbsp;же мы можем создать для вас индивидуальный проект в&nbsp;течении 1-2 дней, учитывая все ваши пожелания.</p>
+                      <p>Вам просто нужно отправить на&nbsp;наш Е-mail письмо. с&nbsp;указанием номера проекта или&nbsp;выслать нам эскиз строения, выполненный вашей рукой, с&nbsp;указанием всех необходимых размеров.</p>
+                    </div>
+                  </div>
+                  <div class="steps__item">
+                    <div class="steps__count">02</div>
+                    <div class="steps__title">Согласование архитектуры</div>
+                    <div class="steps__text">
+                      <p>Для типовых проектов, предоставленных на&nbsp;нашем сайте, Вы можете выбрать интересующую вас комплектацию, добавить или убрать строительные материалы, используемые в&nbsp;проекте.</p>
+                      <p>Для индивидуальных проектов, Вы можете указать комплектацию на&nbsp;этапе проектирования или&nbsp;внести корректировку в&nbsp;уже готовый проект.</p>
+                    </div>
+                  </div>
+                  <div class="steps__item">
+                    <div class="steps__count">03</div>
+                    <div class="steps__title">Подписание договора </div>
+                    <div class="steps__text">
+                      <p>Готовый проект и&nbsp;расчет стоимости отправляются вам на Е-mail для&nbsp;согласования. Если вас все устраивает, вы отправляете ответное письмо со&nbsp;словом “Согласовано”. Далее Вам будет направлен договор, где будет указана стоимость проекта и&nbsp;его комплектация.</p>
+                      <p>Договор между вами и&nbsp;нашей компанией заключается в одном из наших офисов, или удаленно с&nbsp;передачей экземпляров договора по&nbsp;почте.</p>
+                    </div>
+                  </div>
+                  <div class="steps__item">
+                    <div class="steps__count">04</div>
+                    <div class="steps__title">Строительство дома</div>
+                    <div class="steps__text">
+                      <p>Удобным для Вас способом, мы информируем о&nbsp;готовности проекта, и&nbsp;согласовываем с&nbsp;Вами дату и&nbsp;время доставки изделия на&nbsp;вашу строительную площадку. Предварительно, наши строители, подготовят дополнительные строительные материалы  и&nbsp;проведут все необходимые работы.</p>
+                      <p>По окончании всех работ, указанных в&nbsp;договоре, с&nbsp;вами подписывается акт выполненных работ.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--contacts" id="contacts">
+          <div class="inner">
+            <div class="contacts">
+              <div class="contacts-info">
+                <div class="ui-tag contacts-info__ui-tag">Контакты
+                </div>
+                <h2 class="ui-h2 contacts-info__ui-h2">Будем рады сотрудничать с&nbsp;вами
+                </h2>
+                <div class="contacts-info__main">
+                  <div class="contacts-info__item">
+                    <div class="contacts-info__title">Контактный номер:</div>
+                    <div class="contacts-info__links">
+                      <p><a href="tel:+74732940467">+7 (473) 294-04-67</a></p>
+                      <p><a href="tel:+79802431000">+7 (980) 243-10-00</a></p>
+                    </div>
+                  </div>
+                  <div class="contacts-info__item">
+                    <div class="contacts-info__title">Email:</div>
+                    <div class="contacts-info__links">
+                      <p><a href="mailto:Fazenda.vrn@yandex.ru">Fazenda.vrn@yandex.ru</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts-info__wrapper">
+                  <div class="contacts-info__item">
+                    <div class="contacts-info__title">Время работы:</div>
+                    <div class="contacts-info__text">Пн-Пт (8.00 - 18.00)</div>
+                  </div>
+                  <div class="contacts-info__item">
+                    <div class="contacts-info__title">Адрес:</div>
+                    <div class="contacts-info__text">г.Воронеж, Семилукский р-он, Поречье - 2, ул. Энтузиастов 15</div>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts-form">
+                <div class="contacts-form__head">
+                  <h2 class="ui-h2 contacts-form__ui-h2">Бесплатная консультация по&nbsp;любому вопросу
+                  </h2>
+                  <div class="contacts-form__descr">Для бесплатной консультации оставьте свои контакты и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;ближайшее время</div>
+                </div>
+                <form class="contacts-form__main" action="#">
+                  <div class="ui-input contacts-form__ui-input">
+                    <input id="contactsName" placeholder="Имя" type="text" name="name"/>
+                  </div>
+                  <div class="ui-input contacts-form__ui-input">
+                    <input id="contactsPhone" placeholder="Телефон" type="text" name="phone"/>
+                  </div>
+                  <button class="ui-button contacts-form__ui-button">Отправить
+                  </button>
+                </form>
+                <div class="contacts-form__agree">Нажимая кнопку “Отправить”, вы даете согласие на <a class="ui-button ui-button--link" href="#">обработку персональных данных</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--mt0 section--ov-hidden">
+          <div class="map" id="map">
+          </div>
+        </section>
+        <div class="popup__wrapper" style="display: none;" id="object-popup">
+          <div class="object">
+            <div class="object__container">
+              <div class="object__head">
+                <div class="object__name">Садовый дом 42,96 м2</div>
+                <div class="object__price">Договорная цена</div>
+              </div>
+              <div class="object__gallery">
+                <div class="object__img"><img src="img/object_img.webp" alt=""/></div>
+                <div class="object__img"><img src="img/object_plan.webp" alt=""/></div>
+              </div>
+              <div class="object__wrapper">
+                <div class="object__about">
+                  <div class="object__about-item">
+                    <div class="object__about-top"><span class="object__about-num">3</span>
+                      <div class="object__about-icon"><img src="img/object_about_icon_1.svg" alt=""/></div>
+                    </div>
+                    <div class="object__about-descr">комнаты</div>
+                  </div>
+                  <div class="object__about-item">
+                    <div class="object__about-top"><span class="object__about-num">1</span>
+                      <div class="object__about-icon"><img src="img/object_about_icon_2.svg" alt=""/></div>
+                    </div>
+                    <div class="object__about-descr">санузел</div>
+                  </div>
+                  <div class="object__about-item">
+                    <div class="object__about-top"><span class="object__about-num">1</span>
+                      <div class="object__about-icon"><img src="img/object_about_icon_3.svg" alt=""/></div>
+                    </div>
+                    <div class="object__about-descr">терраса</div>
+                  </div>
+                </div>
+                <div class="object__info">
+                  <div class="object__info-item">
+                    <div class="object__info-title">Габариты дома</div>
+                    <div class="object__info-value">5,7 m  x 8 m</div>
+                  </div>
+                  <div class="object__info-item">
+                    <div class="object__info-title">Площадь дома</div>
+                    <div class="object__info-value">42,96 м2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs">
+                <div class="tabs-head">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide tabs-head__item">Фундамент</div>
+                      <div class="swiper-slide tabs-head__item">Обвязка</div>
+                      <div class="swiper-slide tabs-head__item">Наружные стены</div>
+                      <div class="swiper-slide tabs-head__item">Балки перекрытия </div>
+                      <div class="swiper-slide tabs-head__item">Полы</div>
+                      <div class="swiper-slide tabs-head__item">Кровля</div>
+                      <div class="swiper-slide tabs-head__item">Доп. материалы</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-main">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="tabs-main__item swiper-slide">
+                        <h4 class="ui-h4">Фундамент
+                        </h4>
+                        <div class="tabs-text">
+                          <ul class="tabs-ul">
+                            <li>основание под фундаментные блоки из песко-цементной смеси толщиной 5-10 см;</li>
+                            <li>песко-цементные фундаментные блоки сечением 200х200х400 мм;</li>
+                            <li>гидроизоляция из рубероида в 2 слоя, укладывается на опору под подвенечный оклад.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tabs-main__item swiper-slide">
+                        <h4 class="ui-h4">Обвязка
+                        </h4>
+                        <div class="tabs-text">
+                          <ul class="tabs-ul">
+                            <li>основание под фундаментные блоки из песко-цементной смеси толщиной 5-10 см;</li>
+                            <li>песко-цементные фундаментные блоки сечением 200х200х400 мм;</li>
+                            <li>гидроизоляция из рубероида в 2 слоя, укладывается на опору под подвенечный оклад.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tabs-main__item swiper-slide">
+                        <h4 class="ui-h4">Наружные стены
+                        </h4>
+                        <div class="tabs-text">
+                          <ul class="tabs-ul">
+                            <li>основание под фундаментные блоки из песко-цементной смеси толщиной 5-10 см;</li>
+                            <li>песко-цементные фундаментные блоки сечением 200х200х400 мм;</li>
+                            <li>гидроизоляция из рубероида в 2 слоя, укладывается на опору под подвенечный оклад.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tabs-main__item swiper-slide">
+                        <h4 class="ui-h4">Балки перекрытия 
+                        </h4>
+                        <div class="tabs-text">
+                          <ul class="tabs-ul">
+                            <li>основание под фундаментные блоки из песко-цементной смеси толщиной 5-10 см;</li>
+                            <li>песко-цементные фундаментные блоки сечением 200х200х400 мм;</li>
+                            <li>гидроизоляция из рубероида в 2 слоя, укладывается на опору под подвенечный оклад.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tabs-main__item swiper-slide">
+                        <h4 class="ui-h4">Полы
+                        </h4>
+                        <div class="tabs-text">
+                          <ul class="tabs-ul">
+                            <li>основание под фундаментные блоки из песко-цементной смеси толщиной 5-10 см;</li>
+                            <li>песко-цементные фундаментные блоки сечением 200х200х400 мм;</li>
+                            <li>гидроизоляция из рубероида в 2 слоя, укладывается на опору под подвенечный оклад.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tabs-main__item swiper-slide">
+                        <h4 class="ui-h4">Кровля
+                        </h4>
+                        <div class="tabs-text">
+                          <ul class="tabs-ul">
+                            <li>основание под фундаментные блоки из песко-цементной смеси толщиной 5-10 см;</li>
+                            <li>песко-цементные фундаментные блоки сечением 200х200х400 мм;</li>
+                            <li>гидроизоляция из рубероида в 2 слоя, укладывается на опору под подвенечный оклад.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tabs-main__item swiper-slide">
+                        <h4 class="ui-h4">Доп. материалы
+                        </h4>
+                        <div class="tabs-text">
+                          <ul class="tabs-ul">
+                            <li>основание под фундаментные блоки из песко-цементной смеси толщиной 5-10 см;</li>
+                            <li>песко-цементные фундаментные блоки сечением 200х200х400 мм;</li>
+                            <li>гидроизоляция из рубероида в 2 слоя, укладывается на опору под подвенечный оклад.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="object__application-wrapper">
+              <div class="application object__application">
+                <div class="application__head">
+                  <h2 class="ui-h2 application__ui-h2">Хотите заказать проект с&nbsp;учетом всех ваших пожеланий?
+                  </h2>
+                  <div class="application__descr">Оставьте свои контакты ниже, и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время для&nbsp;обсуждения всех деталей</div>
+                </div>
+                <form class="application__form" action="#">
+                  <div class="ui-input">
+                    <input id="applicationObjectName" placeholder="Имя" type="text" name="name"/>
+                  </div>
+                  <div class="ui-input">
+                    <input id="applicationObjectPhone" placeholder="Телефон" type="text" name="phone"/>
+                  </div>
+                  <button class="ui-button application__ui-button ui-button--fz-small">Заказать проект
+                  </button>
+                </form>
+                <div class="application__agree">Нажимая кнопку Заказать проект, вы даете согласие на <a class="ui-button ui-button--link" href="#">обработку персональных данных</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="inner">
+            <div class="footer__top-wrapper"><a class="footer__logo" href="/">
+                <svg width="108" height="57" viewbox="0 0 108 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1995 3.94483C12.6397 7.98997 12.3377 8.21036 6.23704 9.77309C3.1506 10.5631 0.799643 14.5991 0.122678 20.2696C-0.466867 25.2072 1.14138 30.728 3.38396 31.4644C4.9727 31.986 4.96764 31.7266 3.54435 39.5157C3.16721 41.5782 4.6642 42.887 6.11494 41.7614C6.58383 41.3968 7.21167 39.3089 7.50933 37.1204C8.01362 33.4117 8.23831 33.0925 10.8197 32.4186C14.3173 31.5071 17.2505 28.9031 19.1673 25.0086C21.6801 19.9059 20.8073 10.6955 17.6941 9.45474C16.4695 8.96678 16.4609 8.7473 17.5453 5.89212C18.1811 4.21874 18.5026 2.19981 18.2599 1.4062C17.4687 -1.18232 15.7666 -0.117532 14.1995 3.94483ZM79.9186 7.19092C79.4107 8.22587 79.4295 8.34732 81.594 9.48195C83.5115 10.4878 84.6537 11.8619 85.3755 14.0305C86.4108 17.1423 86.7569 20.8237 86.0134 20.8237C85.2895 20.8237 81.9228 15.8635 81.3274 13.9189C81.0045 12.8641 81.0413 8.78555 80.0612 8.5717C78.4764 8.22587 77.6933 11.2497 78.1319 13.8645C78.6774 17.1187 81.4683 21.2582 84.4225 23.1955C87.1224 24.9659 87.0423 26.9749 84.2918 26.4679C82.5795 26.1532 81.5926 26.7799 79.139 29.7394C76.1537 33.3401 72.2906 36.0528 71.5219 35.0887C71.3066 34.8185 71.6426 33.3546 72.2675 31.8372C74.5014 26.4144 73.3657 24.5832 70.2193 28.5331C68.0706 31.2304 65.0073 31.7039 65.8215 29.2133C67.3402 24.5669 65.4047 22.8245 63.4713 27.0991C62.725 28.7489 61.8031 29.7058 61.2229 29.431C60.5077 29.0927 60.3523 29.5308 60.6529 31.0336C61.0084 32.8131 60.6673 33.2584 58.216 34.2189C54.7712 35.5685 51.7303 35.6665 51.7303 34.4285C51.7303 33.9296 52.1926 33.5215 52.7583 33.5215C54.3933 33.5215 58.2326 28.9984 58.2326 27.0728C58.2326 26.0833 57.4458 24.8698 56.4264 24.2866C53.9526 22.8717 51.39 24.4417 49.4566 28.5558C47.7956 32.0903 42.0215 37.5711 40.8872 36.6914C39.8396 35.8787 40.0123 34.4285 41.1567 34.4285C41.6993 34.4285 42.9998 33.5822 44.0467 32.5483C47.7031 28.9385 45.6802 22.4273 41.4074 24.0526C39.3939 24.8181 36.5581 28.0297 36.5581 29.5444C36.5581 31.8699 38.1266 31.8046 39.8982 29.4056C41.3085 27.4946 41.9103 27.1844 42.5699 28.027C43.6269 29.3775 40.9725 32.3914 38.0927 33.1106C37.0501 33.3709 35.1421 34.004 33.8532 34.5164C30.8289 35.72 30.0558 35.0379 30.0558 31.1715C30.0558 25.3695 25.1993 25.3795 20.7127 31.1896C16.4031 36.7721 19.22 41.2816 24.5505 37.3335C26.874 35.613 26.9556 35.6112 27.7785 37.2655C28.8724 39.4649 30.4972 39.4105 33.9955 37.056C36.7055 35.2329 36.8717 35.2202 37.7777 36.7757C38.8838 38.6749 38.9965 39.8703 38.0696 39.8703C37.7083 39.8703 35.9202 41.6915 34.0959 43.9182C31.4068 47.1987 30.7783 48.5637 30.7783 51.1223C30.7783 53.3562 31.2479 54.6922 32.3844 55.6908C34.7216 57.746 36.1976 57.4449 39.0175 54.3367C41.8619 51.2012 43.4116 46.3825 42.8033 42.5632C42.4673 40.4544 42.7975 39.5456 44.5871 37.6555C47.2321 34.862 47.5175 34.8266 48.6727 37.1494C49.7788 39.3733 53.5097 39.5701 57.2601 37.6029C58.687 36.8546 59.9767 36.2424 60.1269 36.2424C60.2772 36.2424 60.4 36.8546 60.4 37.6029C60.4 38.3511 61.0098 38.9634 61.7547 38.9634C62.6816 38.9634 63.2459 38.1044 63.5428 36.2424C63.9069 33.955 64.3166 33.5215 66.1141 33.5215C67.9088 33.5215 68.2881 33.9214 68.4803 36.0157C68.7736 39.22 71.1383 39.7506 74.3894 37.3426C76.757 35.5894 76.7621 35.5894 77.4304 37.5013C78.2085 39.7252 81.9025 40.5351 84.2065 38.9869C85.8856 37.8587 88.5768 31.7637 88.5768 29.0872C88.5768 28.1059 89.0753 26.6765 89.6844 25.9119C90.4943 24.8952 90.5976 24.0871 90.0702 22.8998C89.6728 22.0074 88.9929 18.9554 88.5595 16.1174C87.5942 9.80574 85.5807 6.30661 82.9248 6.32566C81.8613 6.33382 80.2861 6.4421 79.9186 7.19092ZM10.8653 14.6517C10.5885 15.7465 9.43546 19.2347 8.30334 22.4028C6.41332 27.6905 6.12144 28.0814 4.748 27.159C2.80814 25.8557 1.53368 22.2958 2.25689 20.2016C2.78936 18.6597 2.84427 18.6561 3.12748 20.1435C3.49233 22.0581 4.76896 22.2677 4.76896 20.4129C4.76896 17.7609 6.4704 14.5166 8.30478 13.6713C11.1275 12.3707 11.4143 12.4804 10.8653 14.6517ZM17.0511 14.4749C20.7278 19.0905 16.8272 28.0796 11.147 28.0796C9.88268 28.0796 9.71073 27.6723 10.0568 25.4992C10.6926 21.5085 13.9914 12.6609 14.844 12.6609C15.263 12.6609 16.2564 13.4772 17.0511 14.4749ZM95.4043 27.5417C92.4876 29.1362 89.1678 34.1772 89.4431 36.5943C89.7429 39.2327 92.3966 39.5239 95.4606 37.2546C97.9264 35.4279 97.9575 35.4279 98.7074 37.1866C99.1243 38.1643 100.12 38.9634 100.92 38.9634C102.762 38.9634 106.07 36.8374 107.414 34.7912C108.364 33.3437 108.275 33.2784 106.278 33.9523C101.948 35.4143 101.3 35.1377 101.152 31.7665C101.073 29.9734 100.463 28.1458 99.7153 27.4583C98.1547 26.0262 98.1757 26.0262 95.4043 27.5417ZM55.3427 28.8895C55.3427 29.8092 53.142 31.0617 52.6384 30.4287C52.4563 30.201 52.5221 29.5788 52.7843 29.0473C53.3609 27.8764 55.3427 27.754 55.3427 28.8895ZM26.4434 31.6866C26.4434 32.8748 22.9069 35.7327 22.331 35.0107C21.709 34.2298 24.2673 30.8005 25.4717 30.8005C26.0063 30.8005 26.4434 31.1996 26.4434 31.6866ZM84.9644 32.4331C84.9644 34.5228 83.5946 36.2424 81.93 36.2424C80.3051 36.2424 80.2603 34.6298 81.8252 32.4594C83.3533 30.3398 84.9644 30.3262 84.9644 32.4331ZM97.2466 31.6558C97.2466 32.8884 94.2418 35.3536 93.4695 34.7541C92.6372 34.1083 94.9852 30.8005 96.2748 30.8005C96.8095 30.8005 97.2466 31.1851 97.2466 31.6558ZM38.9568 48.2064C38.1895 49.8571 37.0913 51.2076 36.5177 51.2076C34.6811 51.2076 34.9593 47.4944 37.027 44.4098C38.9394 41.5573 39.042 41.5156 39.6843 43.3241C40.1734 44.6991 39.9776 46.0133 38.9568 48.2064Z" fill="currentColor"></path>
+                </svg></a>
+              <ul class="footer__menu">
+                <li class="footer__menu-li"><a class="footer__menu-link" href="#catalog">Проекты</a></li>
+                <li class="footer__menu-li"><a class="footer__menu-link" href="#about">О нас</a></li>
+                <li class="footer__menu-li"><a class="footer__menu-link" href="#features">Почему мы</a></li>
+                <li class="footer__menu-li"><a class="footer__menu-link" href="#contacts">Контакты</a></li>
+              </ul><a class="ui-button footer__ui-button ui-button--fz-small ui-button--empty-black" href="#">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="inner">
+            <div class="footer__bottom-wrapper">
+              <div class="footer__link"><a href="#">политика конфиденциальности</a></div>
+              <div class="footer__link footer__link--right"><a href="#">Персональные данные</a></div>
+              <div class="footer__link footer__link--agree"><a href="#">пользовательское соглашение</a></div>
+              <div class="footer__link">Разработка сайта <a href="https://promo01.ru/" target="_blank">“Генерация”</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="libs/fancybox/fancybox.js"></script>
+    <script src="libs/swiper/swiper-bundle.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
