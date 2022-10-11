@@ -5,6 +5,13 @@
     <title>Index</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=7742add4-5d3c-4060-9f01-67963d12fb4e&amp;lang=ru_RU" type="text/javascript"></script>
   </head>
@@ -54,7 +61,9 @@
                 <div class="banner__addr">Воронеж, Липецк белгород, курск, тамбов</div>
               </div>
               <div class="banner__descr">Строения из профилированного бруса камерной сушки от&nbsp;производителя</div>
-              <div class="banner__btns"><a class="ui-button banner__ui-button ui-button--empty-black" href="#">Выбрать проект</a><a class="ui-button banner__ui-button" href="#">Оставить заявку</a>
+              <div class="banner__btns"><a class="ui-button banner__ui-button ui-button--empty-black" href="#">Выбрать проект</a>
+                <button class="ui-button banner__ui-button" data-src="#application-popup" onclick="window.getPopup($(this))">Оставить заявку
+                </button>
               </div>
             </div>
           </div>
@@ -217,7 +226,9 @@
                     <div class="about__text">
                       <p>Производственно-строительная компания «ФАЗЕНДА» является структурным подразделением компании «ТЕХНОЛОГИИ УЮТА», которая работает на&nbsp;рынке деревянного домостроения уже более 10&nbsp;лет. На&nbsp;протяжении всего этого времени наши специалисты приобрели огромный опыт работы в&nbsp;сфере деревянного домостроения.</p>
                       <p>Ранее мы использовали готовые строительные материалы партнеров-производителей. В&nbsp;2018 году мы&nbsp;открыли собственное производство профилированного бруса. На&nbsp;сегодняшний день мы&nbsp;работаем с&nbsp;надежными поставщиками сырья в&nbsp;городе Йошкар-Ола и&nbsp;городе Томск.</p>
-                    </div><a class="ui-button" href="#">Оставить заявку</a>
+                    </div>
+                    <button class="ui-button" data-src="#application-popup" onclick="window.getPopup($(this))">Оставить заявку
+                    </button>
                   </div>
                 </div>
               </div>
@@ -556,6 +567,24 @@
                 <div class="application__agree">Нажимая кнопку Заказать проект, вы даете согласие на <a class="ui-button ui-button--link" href="#">обработку персональных данных</a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__wrapper" style="display: none;" id="application-popup">
+          <div class="application-popup">
+            <div class="application-popup__head">
+              <h2 class="ui-h2 application-popup__ui-h2">Будем рады сотрудничать с&nbsp;вами
+              </h2>
+              <div class="application__descr">Оставьте свои контакты ниже, и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</div>
+            </div>
+            <form class="application-popup__form" action="#">
+              <div class="ui-input application-popup__ui-input">
+                <input id="applicationPopupPhone" placeholder="Телефон" type="text" name="phone"/>
+              </div>
+              <button class="ui-button application-popup__ui-button ui-button--fz-small">Отправить
+              </button>
+            </form>
+            <div class="application-popup__agree">Нажимая кнопку Заказать проект, вы даете согласие на <a class="ui-button ui-button--link" href="#">обработку персональных данных</a>
             </div>
           </div>
         </div>

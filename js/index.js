@@ -6,6 +6,9 @@ $(window).on('load', function () {
   map()
 })
 
+let tabsHeadSlider
+let tabsMainSlider
+
 function catalogSort() {
   const sortItem = '.catalog-sort__item'
   const sortItemActive = 'catalog-sort__item--active'
@@ -86,7 +89,6 @@ function headerBurgerClose() {
 
 function getPopup(popup, source) {
   const popupSource = source || popup.data('src')
-  const linkIndex = popup.index()
 
   Fancybox.show(
     [{
@@ -107,6 +109,8 @@ function getPopup(popup, source) {
         done: (fancybox, slide) => {
           if (popupSource === '#object-popup') {
             tabs()
+            tabsHeadSlider.update()
+            tabsMainSlider.update()
           }
         }
       }
@@ -121,12 +125,12 @@ function tabs() {
   if ($(tabsHead).length > 0) {
     const tabsNav = document.querySelector(tabsHead)
 
-    const tabsHeadSlider = new Swiper(tabsNav.querySelector('.swiper'), {
+    tabsHeadSlider = new Swiper(tabsNav.querySelector('.swiper'), {
       spaceBetween: 0,
       slidesPerView: 'auto',
       freeMode: true
     })
-    const tabsMainSlider = new Swiper('.tabs-main .swiper', {
+    tabsMainSlider = new Swiper('.tabs-main .swiper', {
       spaceBetween: 0,
       autoHeight: true,
       slidesPerView: 1,
